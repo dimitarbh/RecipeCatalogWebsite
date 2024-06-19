@@ -260,13 +260,15 @@ footer {
   }
 
   #topheader {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
 
   #icon-container {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   #bottomheader {
@@ -275,7 +277,11 @@ footer {
     justify-content: center;
   }
 
-  #logo {
+  .icon-container {
+    order: 2;
+  }
+
+  #logo-container {
     order: -1;
     margin-bottom: 0.5em;
   }
